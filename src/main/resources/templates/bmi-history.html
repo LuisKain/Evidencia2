@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User BMI History</title>
+</head>
+<body>
+
+<h2>User BMI History</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>Date</th>
+        <th>BMI</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="IMC: ${bmiHistoryList}">
+        <td th:text="${bmiHistory.date}"></td>
+        <td th:text="${bmiHistory.bmi}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
