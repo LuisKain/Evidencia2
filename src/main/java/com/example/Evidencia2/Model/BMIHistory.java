@@ -55,6 +55,8 @@ public class BMIHistory {
         return date;
     }
 
+
+
     public void setDate(LocalDate date) {
         this.date = date;
     }
